@@ -1,0 +1,14 @@
+1. start Docker Desktop
+2. docker build .
+
+# run application in docker
+docker-compose run app sh -c "python manage.py test && flake8"
+
+# build docker image
+docker-compose build
+
+# build django project in
+docker-compose run app sh -c "django-admin.py startproject app ."
+
+# run app in docker
+docker-compose run app
